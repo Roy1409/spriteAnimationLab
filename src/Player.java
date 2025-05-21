@@ -110,24 +110,31 @@ public class Player {
     public void moveRight() {
         if (xCoord + MOVE_AMT <= 920) {
             xCoord += MOVE_AMT;
+            y=false;
         }
     }
 
     public void moveLeft() {
         if (xCoord - MOVE_AMT >= 0) {
             xCoord -= MOVE_AMT;
+            y=false;
+
         }
     }
 
     public void moveUp() {
         if (yCoord - MOVE_AMT >= 0) {
             yCoord -= MOVE_AMT;
+            y=false;
+
         }
     }
 
     public void moveDown() {
         if (yCoord + MOVE_AMT <= 435) {
             yCoord += MOVE_AMT;
+            y=false;
+
         }
     }
 
